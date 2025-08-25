@@ -14,7 +14,7 @@
     }
   ],
   "env": {
-    "SECRET_KEY": "@secret-key",
+    "SECRET_KEY": "p6Yt4uQz8jR1cL3kV0sN5aX7wM2eG9bF4tP8hZ3qD6yU1oJ7rK2vC5xL8nH9aW2",
     "SEARCH_COST": "2"
   },
   "regions": ["bom1"],
