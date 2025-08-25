@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "app.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.9"
-      }
+  "functions": {
+    "app.py": {
+      "runtime": "python3.9",
+      "memory": 512,
+      "maxDuration": 30
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
@@ -19,12 +16,6 @@
   "env": {
     "SECRET_KEY": "@secret-key",
     "SEARCH_COST": "2"
-  },
-  "functions": {
-    "app.py": {
-      "memory": 512,
-      "maxDuration": 30
-    }
   },
   "regions": ["bom1"],
   "headers": [
